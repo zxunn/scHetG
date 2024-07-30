@@ -12,7 +12,7 @@ scHetG is implemented in Python 3.9, the code execution adheres to the subsequen
 
 1.```python scHetG.py```
 
-Prior to execution, it is necessary to set either ```common_genes = True``` or ```common_genes = False``` to determine whether to integrate each batch of datasets within common genes or distinct genes. 
+Prior to execution, it is necessary to set either ```common_genes = True``` or ```common_genes = False``` to integrate datasets that possess common or distinct genes in different batches. 
 
 The output adata contains the cell embeddings in ```adata.obsm['feat']``` and the gene embeddings in ```adata.varm['feat']```. The embeddings can be used as input of other downstream analyses.
 
