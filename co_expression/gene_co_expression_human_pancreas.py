@@ -47,8 +47,8 @@ def add_geneset_human_pancreas(dataset, gene_embeddings,gene_names, method):
     return df_plot, dim_labels
 
 
-data = sc.read_h5ad("../../scHetG/human pancreas 4scHetG0.94334.h5ad ")
-SIMBA_data = sc.read_h5ad("../../baseline/human pancreas 4SIMBA0.57166.h5ad")
+data = sc.read_h5ad("../scHetG_human pancreas.h5ad ")
+SIMBA_data = sc.read_h5ad("../SIMBA_human pancreas.h5ad")
 data_genes = data.var_names
 simba_genes = SIMBA_data.obs_names
 common_genes = np.intersect1d(data_genes, simba_genes)

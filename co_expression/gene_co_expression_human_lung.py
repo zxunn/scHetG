@@ -50,10 +50,8 @@ def add_geneset_human_lung(dataset, gene_embeddings, gene_names, method):
 
 ######## huamn lung #####################
 
-data = sc.read_h5ad("../../scHetG/human lungscHetG0.6439.h5ad")
-data_name = sc.read_h5ad('cell_gene_emb/gene_human lungscIAGNN0.7713.h5ad')
-data.var_names = data_name.var_names
-SIMBA_data = sc.read_h5ad("../../baseline/human lungSIMBA0.46756.h5ad")
+data = sc.read_h5ad("../scHetG_human lung.h5ad")
+SIMBA_data = sc.read_h5ad("../SIMBA_human lung.h5ad")
 
 colors = ['#4878D0', 'gold', '#6ACC64', '#D65F5F', 'lightpink', 'teal', 'navy', 'darkorchid','#FF0000','#00FF00', '#0000FF', '#FFFF00','#FF6600']
 #legend_labels = ['lung macrophage', 'lung endothelial cell', 'lung secretory cell','B cell']
