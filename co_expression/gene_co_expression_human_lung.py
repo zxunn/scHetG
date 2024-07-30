@@ -54,7 +54,6 @@ data = sc.read_h5ad("../scHetG_human lung.h5ad")
 SIMBA_data = sc.read_h5ad("../SIMBA_human lung.h5ad")
 
 colors = ['#4878D0', 'gold', '#6ACC64', '#D65F5F', 'lightpink', 'teal', 'navy', 'darkorchid','#FF0000','#00FF00', '#0000FF', '#FFFF00','#FF6600']
-#legend_labels = ['lung macrophage', 'lung endothelial cell', 'lung secretory cell','B cell']
 legend_labels = ['B cell','lung macrophage', 'lung endothelial cell', 'lung secretory cell',]
 legend_handles = [plt.Line2D([0], [0], marker='o', color='w', markerfacecolor=color, markersize=8) for color in
                   colors]
