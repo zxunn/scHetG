@@ -23,10 +23,9 @@ torch.manual_seed(seed)
 torch.cuda.manual_seed(seed)
 torch.cuda.manual_seed_all(seed)
 
-common_genes = False #The determination to integrate each batch of datasets sharing the same genetics
+common_genes = True #The determination to integrate each batch of datasets sharing the same genetics
 
-for dataset in ['simulation batch1&2']:
-#for dataset in ['mouse pancreas', 'mouse atlas','human pancreas','human pancreas 2','human lung','human heart','mouse brain']:
+for dataset in ['mouse pancreas', 'mouse atlas','human pancreas','human pancreas 2','human lung','human heart','mouse brain']:
     print('Structure-preserved integration of scRNA-seq data using heterogeneous graph neural network')
     print('----------------data: {} ----------------- '.format(dataset))
     if dataset == 'mouse pancreas':
