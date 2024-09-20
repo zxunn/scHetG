@@ -7,6 +7,8 @@ scHetG is a structure-preserved scRNA-seq data integration approach using hetero
 The sources of all preprocessed data used in this work are available at [https://drive.google.com/drive/folders/1OCN6UmUsM98CpsecpbmQZsXmS0HKcB4k?usp=drive_link.](https://drive.google.com/drive/folders/1Ar8-n-HOEOlK-7A82oEHBItEr0-JhIbJ?usp=sharing)
 
 ## demo
+The reproducibility file provides the experimental reproduction process
+
 
 scHetG is implemented in Python 3.9, the code execution adheres to the subsequent steps:
 
