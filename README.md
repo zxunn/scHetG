@@ -10,8 +10,8 @@ The sources of all preprocessed data used in this work are available at [https:/
 The reproducibility file provides the experimental reproduction process, including ablation, comparison_methods, integration_common_genes(datasets with common genes between batches), integration_distinct_genes(dataset with distinct genes between batches).
 scHetG is implemented in Python 3.9. Below we describe how to integrate datasets with common genes:
 
-1. Dataset preparation
-The dataset storage format is annadata, including adata.obs['batch']. Note that the batch tag needs to be changed to ‘batch1, batch2, batch3, batch4,....’. Similarly for sequential form starting from 1.
+1.Dataset preparation
+The dataset storage format is annadata ```adata```, including adata.obs['batch']. Note that the batch tag needs to be changed to ‘batch1, batch2, batch3, batch4,....’. Similarly for sequential form starting from 1.
 
 2.Preprocessing
   ```
